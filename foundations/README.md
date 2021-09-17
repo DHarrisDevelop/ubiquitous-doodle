@@ -90,9 +90,89 @@
 ```
 - VS Code allows us to use a simple shortcut for developing boilerplate we can just type `!` on the first line
 ### Assignments
-- [ ] Watch and follow along Kevin Powell's [Building Your First Web Page video](https://www.youtube.com/watch?v=V8UAEoOvqFg&list=PL4-IK0AVhVjM0xE0K2uZRvsM7LkIhsPT-&index=2)
-- [ ] Delete teh contents of index.html and write the boilerplate from memory several times
-- [ ] Check boilerplate within an [HTML Validator](https://validator.w3.org/)
+- [x] Watch and follow along Kevin Powell's [Building Your First Web Page video](https://www.youtube.com/watch?v=V8UAEoOvqFg&list=PL4-IK0AVhVjM0xE0K2uZRvsM7LkIhsPT-&index=2)
+- [x] Delete the contents of index.html and write the boilerplate from memory several times
+- [x] Check boilerplate within an [HTML Validator](https://validator.w3.org/)
 ### Additional Resources
 - [charsets we should use with HTML pages](https://www.bitdegree.org/learn/html-encoding)
 ## Working with Text
+- Most data on the web is `text based` so it is important to know how to work with text
+- There are several important text type **elements** we need to learn to work with:
+  - **paragraphs**
+    - `<p>`
+    - `</p>` 
+  - **headings**
+    - `<h1>` **through** `<h6>`
+    - `</h1>` **through** `</h6>`
+    - **NOTE** - Using the correct heading level is important to ensure proper hiearchy 
+  - **bold text**
+    - `<strong>`
+    - `</strong>` 
+  - **italicized text**
+    - `<em>`
+    - `</em>` 
+- **Nesting** and **Indentation** are important in HTML. When we place one element inside another we call it **nesting** this creates a **parent**:**child** relationship
+- **COMMENTS** - Comments are not visible to the browser 
+  - `<!-- {comment text} -->`
+### Assignment
+- [x] Watch Kevin Powell's [HTML Paragraph and Headings Video](https://www.youtube.com/watch?v=yqcd-XkxZNM&list=PL4-IK0AVhVjM0xE0K2uZRvsM7LkIhsPT-&index=3)
+- [x] Watch Kevin Powell's [HTML Bold and Italic Text Video](https://www.youtube.com/watch?v=gW6cBZLUk6M&list=PL4-IK0AVhVjM0xE0K2uZRvsM7LkIhsPT-&index=4)
+- [x] Create a sample blog article with multiple headings, maybe use the [Lorem Ipsum Generator](https://loremipsum.io/)
+## Lists
+- Lists are everywhere on the web, HTML makes lists easy
+- **unordered lists** - are used when the ordering of list items don't matter, think a bulleted list
+```
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+```
+- **ordered lists** - are used when the ordering is important think numbered lists
+```
+<ol>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ol>
+```
+### Assignment
+- [ ] Create an **unordered** shopping list of your FAVORITE FOODS
+- [ ] Create an **ordered** list of TODAY'S TO-DO Items
+- [ ] Create an **unordered** list of PLACES you'd like to visit
+- [ ] Create an **ordered** list of top 5 favorite video games/movies/books/etc...
+### Additional Resources
+- [Microsoft Developer Network - Unordered List](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul)
+- [Microsoft Developer Network - Ordered List](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol)
+- [Shay Howe's HTML lists tutorial](https://learn.shayhowe.com/html-css/creating-lists/)
+## Links and Images
+- Links and images are both super important for the web
+- **anchor elements**
+  - `<a>`
+  - `</a>` 
+  - Without additional context this doesn't do anything, we need attributes an **attribute** is made up of a **name** and a **value**
+  - `<a href="https://www.theodinproject.com/about">Click me</a>` - will link us to the Odin Project with the text `Click me`
+  - **href** is an attribute that accepts a URL as a value
+- **ABSOLUTE** vs **RELATIVE** links
+  - **absolute** links link to other pages or sites on the internet and look like; **absolute** links always contain the protocol and domain of the destination
+    - `protocol://domain/path`
+  - **relative** links link to pages and resources within our own site's structure; they do not contain the domain name, they assume the domain name are the same
+- **Images** allow us to display more than just text we can use the image tag to do this with images
+  - `<img/>`
+  -  Just like the **anchor** tag, to be useful we need to use an **attribute** with the Image tag
+    - `<img src="{URL}">`
+    - there is also an **alt** attribute which we should always strive to use it describes an image, if the image can't be loaded this will be shown it will also allow assisitve technologies to read what the image is showing
+### Assignment
+- [ ] Watch Kevin Powell's [HTML Link's Video](https://www.youtube.com/watch?v=tsEQgGjSmkM&list=PL4-IK0AVhVjM0xE0K2uZRvsM7LkIhsPT-&index=5)
+- [ ] Watch Kevin Powell's [HTML Images Video](https://www.youtube.com/watch?v=0xoztJCHpbQ&list=PL4-IK0AVhVjM0xE0K2uZRvsM7LkIhsPT-&index=6)
+- [ ] Watch Kevin Powell's [File Structure Video](https://www.youtube.com/watch?v=ta3Oxx7Yqbo&list=PL4-IK0AVhVjM0xE0K2uZRvsM7LkIhsPT-&index=7)
+- [ ] Read about the [four main image formats](https://www.internetingishard.com/html-and-css/links-and-images/#image-formats) that can be used on the web
+## [Project - Recipes]()
+- We want to build a classic recipe website which will have several pages:
+- [ ] A main **index** page - with links to several recipes
+- [ ] several **recipe** pages
+- We will walk this project out in at least 4 iterations
+  1. Iteration 1: Initial Structure
+  2. Iteration 2: Recipe Page
+  3. Iteration 3: Recipe Page Content
+  4. Iteration 4: Add More Recipies 
